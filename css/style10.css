@@ -260,7 +260,6 @@ box-shadow: 0 6px 8px rgba(0, 0, 0, .25);
 	justify-content: space-between;
 	width: 100%;
 	margin: 20px 0;
-	min-height: 200px;
 }
 
 .banner .col-33 {
@@ -369,77 +368,6 @@ box-shadow: 0 6px 8px rgba(0, 0, 0, .25);
 	background: #fff;
 }
 
-@media (max-width: 560px) {
-
-	.navigation {
-		padding: 5px 0;
-		text-align: center;
-		position: relative;
-	}
-
-	.navigation ul {
-		display: none;
-		padding: 35px 0 10px;
-		position: absolute;
-		width: 100%;
-		left: 0;
-		top: 100%;
-		background: #111;
-	}
-
-	.navigation li {
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-		margin: 5px 0;
-	}
-
-	.navigation .mobile-btn:hover + ul{
-		display: block;
-	}
-
-	.mobile-btn {
-		display: inline-flex;
-	}
-
-	.main .banner {
-		min-height: auto;
-	}
-
-	.banner p {
-		font-size: 17px;
-	}
-
-	.main {
-		padding: 10px;
-	}
-
-}
-
-@media (max-width: 480px) {
-
-	.header .flex {
-		flex-direction: column;
-	}
-
-	.search {
-		margin: 15px 0;
-	}
-
-}
-
-@media (max-width: 670px) {
-
-	.col-row {
-		width: 50%;
-		flex-direction: column;
-	}
-
-	.footer .row {
-		flex-wrap: wrap;
-	}
-}
-
 @media (max-width: 768px) {
 
 	.navigation li {
@@ -475,4 +403,79 @@ box-shadow: 0 6px 8px rgba(0, 0, 0, .25);
 	.footer h3 {
 		font-size: 20px;
 	}
+}
+
+@media (max-width: 670px) {
+
+	.col-row {
+		width: 50%;
+		flex-direction: column;
+	}
+
+	.footer .row {
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 560px) {
+
+	.navigation {
+		padding: 5px 0;
+		text-align: center;
+		position: relative;
+	}
+
+	.navigation ul {
+		display: none;
+		padding: 35px 0 10px;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		top: 100%;
+		background: #111;
+	}
+
+	.navigation li {
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+		margin: 5px 0;
+	}
+
+	.navigation .mobile-btn:hover + ul{
+		display: block;
+	}
+
+	.mobile-btn {
+		display: inline-flex;
+	}
+
+	.main .banner {
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.banner .col-33 {
+		width: 50%;
+		height: 130px;
+		margin: 5px 0;
+	}
+
+	.main {
+		padding: 10px;
+	}
+
+}
+
+@media (max-width: 480px) {
+
+	.header .flex {
+		flex-direction: column;
+	}
+
+	.search {
+		margin: 15px 0;
+	}
+
 }
